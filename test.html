@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-601d3441d4cd20db4d00d5298655096d"}, "mark": "bar", "encoding": {"x": {"type": "nominal", "field": "\uad6d\uac00"}, "y": {"type": "quantitative", "field": "\ud655\uc9c4\uc790"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-601d3441d4cd20db4d00d5298655096d": [{"\uad6d\uac00": "\ubbf8\uad6d", "\ud655\uc9c4\uc790": 3677453}, {"\uad6d\uac00": "\ube0c\ub77c\uc9c8", "\ud655\uc9c4\uc790": 2064328}, {"\uad6d\uac00": "\uc778\ub3c4", "\ud655\uc9c4\uc790": 1003832}, {"\uad6d\uac00": "\ub7ec\uc2dc\uc544", "\ud655\uc9c4\uc790": 759203}, {"\uad6d\uac00": "\ud398\ub8e8", "\ud655\uc9c4\uc790": 341586}, {"\uad6d\uac00": "\ub0a8\uc544\ud504\ub9ac\uce74 \uacf5\ud654\uad6d", "\ud655\uc9c4\uc790": 337594}, {"\uad6d\uac00": "\uba55\uc2dc\ucf54", "\ud655\uc9c4\uc790": 331298}, {"\uad6d\uac00": "\uce60\ub808", "\ud655\uc9c4\uc790": 326539}, {"\uad6d\uac00": "\uc601\uad6d", "\ud655\uc9c4\uc790": 294803}, {"\uad6d\uac00": "\uc774\ub780", "\ud655\uc9c4\uc790": 269440}, {"\uad6d\uac00": "\ud30c\ud0a4\uc2a4\ud0c4", "\ud655\uc9c4\uc790": 259999}, {"\uad6d\uac00": "\uc2a4\ud398\uc778", "\ud655\uc9c4\uc790": 258855}, {"\uad6d\uac00": "\uc0ac\uc6b0\ub514\uc544\ub77c\ube44\uc544", "\ud655\uc9c4\uc790": 245851}, {"\uad6d\uac00": "\uc774\ud0c8\ub9ac\uc544", "\ud655\uc9c4\uc790": 243967}, {"\uad6d\uac00": "\ud130\ud0a4", "\ud655\uc9c4\uc790": 217799}, {"\uad6d\uac00": "\ub3c5\uc77c", "\ud655\uc9c4\uc790": 200843}, {"\uad6d\uac00": "\ubc29\uae00\ub77c\ub370\uc2dc", "\ud655\uc9c4\uc790": 199357}, {"\uad6d\uac00": "\ucf5c\ub86c\ube44\uc544", "\ud655\uc9c4\uc790": 182140}, {"\uad6d\uac00": "\ud504\ub791\uc2a4", "\ud655\uc9c4\uc790": 173304}, {"\uad6d\uac00": "\uc544\ub974\ud5e8\ud2f0\ub098", "\ud655\uc9c4\uc790": 119288}, {"\uad6d\uac00": "\uce90\ub098\ub2e4", "\ud655\uc9c4\uc790": 109667}, {"\uad6d\uac00": "\uce74\ud0c0\ub974", "\ud655\uc9c4\uc790": 105898}, {"\uad6d\uac00": "\uc774\ub77c\ud06c", "\ud655\uc9c4\uc790": 88171}, {"\uad6d\uac00": "\uc774\uc9d1\ud2b8", "\ud655\uc9c4\uc790": 86474}, {"\uad6d\uac00": "\uc911\uad6d \ub300\ub959", "\ud655\uc9c4\uc790": 83644}, {"\uad6d\uac00": "\uc778\ub3c4\ub124\uc2dc\uc544", "\ud655\uc9c4\uc790": 83130}, {"\uad6d\uac00": "\uc2a4\uc6e8\ub374", "\ud655\uc9c4\uc790": 77281}, {"\uad6d\uac00": "\uc5d0\ucf70\ub3c4\ub974", "\ud655\uc9c4\uc790": 72444}, {"\uad6d\uac00": "\uce74\uc790\ud750\uc2a4\ud0c4", "\ud655\uc9c4\uc790": 66895}, {"\uad6d\uac00": "\ubca8\ub85c\ub8e8\uc2dc", "\ud655\uc9c4\uc790": 65782}, {"\uad6d\uac00": "\uc624\ub9cc", "\ud655\uc9c4\uc790": 64193}, {"\uad6d\uac00": "\ubca8\uae30\uc5d0", "\ud655\uc9c4\uc790": 63238}, {"\uad6d\uac00": "\ud544\ub9ac\ud540", "\ud655\uc9c4\uc790": 63001}, {"\uad6d\uac00": "\ucfe0\uc6e8\uc774\ud2b8", "\ud655\uc9c4\uc790": 58221}, {"\uad6d\uac00": "\uc6b0\ud06c\ub77c\uc774\ub098", "\ud655\uc9c4\uc790": 57264}, {"\uad6d\uac00": "\uc544\ub78d\uc5d0\ubbf8\ub9ac\ud2b8", "\ud655\uc9c4\uc790": 56422}, {"\uad6d\uac00": "\ubcfc\ub9ac\ube44\uc544", "\ud655\uc9c4\uc790": 54156}, {"\uad6d\uac00": "\ub124\ub35c\ub780\ub4dc", "\ud655\uc9c4\uc790": 51146}, {"\uad6d\uac00": "\ud30c\ub098\ub9c8", "\ud655\uc9c4\uc790": 50373}, {"\uad6d\uac00": "\ub3c4\ubbf8\ub2c8\uce74 \uacf5\ud654\uad6d", "\ud655\uc9c4\uc790": 50113}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
